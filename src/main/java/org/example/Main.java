@@ -384,6 +384,14 @@ public class Main {
         Assert.assertEquals(expectedurl,actualurl);
     }
 
-     
+     @Test
+    public void logout(){
+         driver.get("https://candymapper.com/launch-candymapper");
+         driver.findElement(By.xpath("//*[@id=\"4\"]/div/svg")).click();
+         driver.findElement(By.xpath("//*[@id=\"n-7291872955-membership-sign-out\"]")).click();
+         String expectedurl="https://candymapper.com/";
+         String actualurl= driver.getCurrentUrl();
+         Assert.assertEquals(expectedurl,actualurl);
+     }
 }
 
