@@ -213,6 +213,11 @@ public class Main {
         WebElement elem = driver.findElement(By.xpath("/html/body/div[1]/div/div/div[3]/div/div/section/div/div/span/span/div/div/form/div/button"));
         Actions actions = new Actions(driver);
         actions.moveToElement(elem).click().build().perform();
+        driver.get("https://gem.godaddy.com/signups/activate/MS0td05zQjFFM1o5NTFjc3gvTldCSi9MVFNlNE9NWjd6SDg0MHFkTzFCT3Zkem1DNFdYaDAxY2h6TUdjaG1hL05kUEs1a3hBZXZsVTI1c0ErSHMtLWJPZkRWSFN1VEhUYlpMR0ktLVRnb2JOb0RGMTBwU3A1VnJJNXFHYWc9PQ==?signup=1005951");
+        String expected ="Thank you for confirming!";
+        String actual=driver.findElement(By.xpath("/html/body/div/div/div[1]/form/fieldset/div/p")).getText();
+        Assert.assertEquals(expected,actual);
+
     }
 */
     /*
@@ -233,6 +238,10 @@ public class Main {
         WebElement elem = driver.findElement(By.xpath("/html/body/div[1]/div/div/div[3]/div/div/section/div/div/span/span/div/div/form/div/button"));
         Actions actions = new Actions(driver);
         actions.moveToElement(elem).click().build().perform();
+        driver.get("https://gem.godaddy.com/signups/activate/MS0td05zQjFFM1o5NTFjc3gvTldCSi9MVFNlNE9NWjd6SDg0MHFkTzFCT3Zkem1DNFdYaDAxY2h6TUdjaG1hL05kUEs1a3hBZXZsVTI1c0ErSHMtLWJPZkRWSFN1VEhUYlpMR0ktLVRnb2JOb0RGMTBwU3A1VnJJNXFHYWc9PQ==?signup=1005951");
+        String expected ="Thank you for confirming!";
+        String actual=driver.findElement(By.xpath("/html/body/div/div/div[1]/form/fieldset/div/p")).getText();
+        Assert.assertEquals(expected,actual);
     }
 
      */
