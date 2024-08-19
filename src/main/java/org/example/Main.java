@@ -18,7 +18,7 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
         driver = new ChromeDriver();
     }
-/*
+
     @Test
     public void registerwithvaliddata() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -34,9 +34,9 @@ public class Main {
         Assert.assertEquals(expected,actual);
     }
 
- */
+ 
 
-    /*
+    
     @Test
     public void setpassword(){
         driver.get("https://candymapper.com/m/create?e=hatemmadouh22%40gmail.com&id=01916bf6-2e42-79f4-99d7-098ff81bb67e&t=TixCSdrQjkK3FmWUt4Gmwk3vxnjNQJtJUw&x=1725821182");
@@ -47,8 +47,8 @@ public class Main {
         String actual=driver.findElement(By.xpath("//*[@id=\"bs-6\"]/span/div/div/h2/span")).getText();
         Assert.assertEquals(expected,actual);
     }
-*/
-    /*
+
+    
     @Test
     public void setpasswordwithdifferntconfirm(){
         driver.get("https://candymapper.com/m/create?e=hatemmadouh22%40gmail.com&id=01916bf6-2e42-79f4-99d7-098ff81bb67e&t=TixCSdrQjkK3FmWUt4Gmwk3vxnjNQJtJUw&x=1725821182");
@@ -60,8 +60,8 @@ public class Main {
         Assert.assertEquals(expected,actual);
     }
 
-     */
-/*
+     
+
     @Test
     public void registerwithinvalidemail() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -77,8 +77,8 @@ public class Main {
         Assert.assertEquals(expected,actual);
     }
 
- */
-    /*
+ 
+    
     @Test
       public void loginwithvalidemailandpassword(){
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -91,8 +91,8 @@ public class Main {
         Assert.assertEquals(expected,actual);
     }
 
-     */
-/*
+     
+
     @Test
     public void loginwithvalidemailandinvalidpassword() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -105,8 +105,8 @@ public class Main {
         Assert.assertEquals(expected, actual);
     }
 
- */
-    /*
+ 
+    
     @Test
     public void loginwithinvalidemailandvalidpassword() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -119,8 +119,7 @@ public class Main {
         Assert.assertEquals(expected, actual);
     }
 
-     */
-/*
+  
     @Test
     public void loginwithinvalidemailandinvalidpassword() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -132,8 +131,7 @@ public class Main {
         String actual = driver.findElement(By.xpath("//*[@id=\"bs-6\"]/span/div/div/div/form/div[1]/p")).getText();
         Assert.assertEquals(expected, actual);
     }
-*/
-    /*
+
     @Test
     public void loginwithvalidemailandemptypassword() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -146,8 +144,7 @@ public class Main {
         Assert.assertEquals(expected, actual);
     }
 
-     */
-    /*
+     
     @Test
     public void loginwithemptyemailandvalidpassword() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -160,9 +157,7 @@ public class Main {
         Assert.assertEquals(expected, actual);
     }
 
-     */
-
-    /*
+     
     @Test
     public void resetpasswordwithvalidemail(){
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -179,9 +174,7 @@ public class Main {
         Assert.assertEquals(expected,actual);
     }
 
-     */
-
-    /*
+     
     @Test
     public void resetpasswordwithinvalidemail(){
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -194,8 +187,7 @@ public class Main {
         Assert.assertEquals(expected,actual);
 }
 
-     */
-    /*
+    
     @Test
     public void attendzombietionparty() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -219,8 +211,7 @@ public class Main {
         Assert.assertEquals(expected,actual);
 
     }
-*/
-    /*
+
     @Test
     public void attendghostvileparty() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -244,8 +235,7 @@ public class Main {
         Assert.assertEquals(expected,actual);
     }
 
-     */
-    /*
+     
     @Test
     public void attendzombitionpartywithinvalidemail() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -268,8 +258,7 @@ public class Main {
         Assert.assertEquals(expected, actual);
     }
 
-     */
-/*
+  
     @Test
     public void hostzombitionparty() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -293,8 +282,7 @@ public class Main {
         Assert.assertEquals(expected,actual);
     }
 
- */
-    /*
+
     @Test
     public void hostghostparty() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -318,9 +306,7 @@ public class Main {
         Assert.assertEquals(expected,actual);
     }
 
-     */
-
-    /*
+     
     @Test
     public void hostzombitionpartywithinvalidemail() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -344,9 +330,7 @@ public class Main {
         Assert.assertEquals(expected, actual);
     }
 
-     */
-
-    /*
+     
     @Test
     public void hostghostpartywithinvalidemail() {
         driver.get("https://candymapper.com/m/login?r=%2Fjoin-us");
@@ -370,9 +354,7 @@ public class Main {
         Assert.assertEquals(expected, actual);
     }
 
-     */
-
-    /*
+     
 @Test
     public void verifylaunchCandyMapperbutton(){
     driver.get("https://candymapper.com/");
@@ -382,9 +364,7 @@ public class Main {
     Assert.assertEquals(expectedurl,actualurl);
 }
 
-*/
 
-/*
 @Test
     public void verifyjoinusbutton(){
     driver.get("https://candymapper.com/");
@@ -394,9 +374,7 @@ public class Main {
     Assert.assertEquals(expectedurl,actualurl);
 }
 
-     */
-
-    /*
+    
     @Test
     public void verifyHalloweenPartybutton(){
         driver.get("https://candymapper.com/");
@@ -406,6 +384,6 @@ public class Main {
         Assert.assertEquals(expectedurl,actualurl);
     }
 
-     */
+     
 }
 
